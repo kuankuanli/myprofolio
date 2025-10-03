@@ -1,0 +1,13 @@
+
+# Editor directories and files
+/.vscode
+/.idea
+/.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Cache and compiled files
+/.cache
+/.sass-cache
+*.css.map
+*.js.map
