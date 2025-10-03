@@ -1,0 +1,30 @@
+.my-role-img-lg, .core-img-lg {
+    width: 54rem;
+}
+.my-role-img-sm {
+    display: none;
+}
+.core-img-sm {
+    display: none;
+}
+/* 所有小螢幕 */
+@media screen and (max-width: 500px) {
+    .my-role-img {
+        width: 20rem;
+    }
+    .my-role-img-sm {
+        display: block;
+        width: 14rem;
+        margin-left: 5rem;
+    }
+    .core-img-sm {
+        display: block;
+        width: 100%;
+    }
+    .my-role-img-lg {
+        display: none;
+    }
+    .core-img-lg {
+        display: none;
+    }
+}

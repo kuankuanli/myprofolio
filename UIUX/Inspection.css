@@ -1,0 +1,24 @@
+.color-guildelines-content {
+    align-items: center;
+}
+.color-group {
+    justify-content: center;
+}
+.color-group::before {
+    top: 15px;
+    left: 118px;
+    background-image: url("/wwwroot/img/Inspection/dropper.svg");
+}
+.brush-icon {
+    color: #A4CD35;
+}
+.project-main-img {
+    object-position: center 42%;
+}
+/* 所有小螢幕 */
+@media screen and (max-width: 1366px) {
+    .color-group::before {
+        left: -32px;
+        top: -9px;
+    }
+}

@@ -1,0 +1,54 @@
+.color-group::before {
+    top: 133px;
+    left: 786px;
+    background-image: url("/wwwroot/img/Big-Screen/dropper.svg");
+}
+.brush-icon {
+    color: #67E2DC;
+}
+.fa-sun {
+    color: #FFC800;
+}
+.user-story .fa-triangle-exclamation {
+    color: #FF5050;
+}
+.fa-cloud-showers-heavy {
+    color: #797979;
+}
+.fa-lock {
+    color: #B3B3B3;
+}
+/* 所有小螢幕 */
+@media screen and (max-width: 1366px) {
+    .color-group::before {
+        right: -81px;
+    }
+    .brush-icon {
+        top: 285px;
+    }
+}
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
+    .brush-icon {
+        right: 33px;
+        top: 330px;
+    }
+}
+@media screen and (max-width: 1024px) and (min-height: 1366px) {
+    .planning-flow > div:last-child {
+        font-size: 14px;
+        align-content: center;
+    }
+}
+/* 所有橫式螢幕 */
+@media screen and (orientation: landscape) and (max-width: 1024px){
+    .planning-flow > div:last-child {
+        font-size: 14px;
+        align-content: center;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .brush-icon {
+        right: 10px;
+    }
+}

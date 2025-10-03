@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>UIUX Design - 巡檢報修管理系統</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="icon" type="image/x-icon" href="../wwwroot/favicon.ico">
+
+    <link rel="stylesheet" href="../wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+
+    <!-- Kuan awesome -->
+    <link rel="stylesheet" href="../wwwroot/assets/iconImgs/ku/style.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="../wwwroot/lib/font-awesome/css/all.css">
+
+    <script src="../wwwroot/lib/jquery/dist/jquery.min.js"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 共用CSS -->
+    <link rel="stylesheet" href="../wwwroot/css/Base.css" asp-append-version="true" />
+    <link rel="stylesheet" href="./Inspection.css" asp-append-version="true" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="headerpage"></header>
+    <!-- 內容 -->
+    <div class="container">  
+        <div class="item-name">
+            <div class="project-name">巡檢報修管理系統</div>
+            <h2>一站式巡檢與報修管理，提升維護效率，即時掌握現場問題</h2>
+            <div class="project-info project-tag">
+                <div class="tag-item">#UIUX設計</div>
+                <div class="tag-item">#RWD</div>
+            </div>
+        </div>
+        <img class="project-main-img" src="../wwwroot/img/Inspection/Inspection-1.png">
+        <div class="zone m-0 row w-100" data-aos="fade-up">
+            <div class="section-title col-12 col-xxl-4 col-lg-4 col-md-4 mb-4">
+                <div class="section-title-text">專案背景</div>
+                <div class="section-title-bg-text">Background</div>
+                <hr class="title-text-decorative-line">
+            </div>
+            <div class="section-info col-12 col-md-12 col-lg-8 col-xxl-8">
+                <div>在日常運營中，設備與展品的維修、保養以及巡檢是一項不可或缺的工作。目前現有的排班與巡檢流程主要依賴線下的 Excel 表格進行製作，並通過 LINE 群組將班表分享給相關人員，各人員再以紙本的方式進行巡檢任務。雖然這種方式勉強滿足需求，但隨著業務規模擴大與管理需求增多，手動方式逐漸顯現出效率低下、資訊分散及不便於人員管理等問題。</div>
+                <div class="info-list">
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-diamond"></i>
+                            <div class="detail-title">專案定位</div>
+                        </div>
+                        <div class="detail-text">旨在提升巡檢作業效率，簡化維修通報流程，並透過即時數據與智能提醒，協助管理人員有效掌握設備狀態與工作進度，降低溝通成本與人為疏失，設計一套巡檢與報修管理的雲端解決方案。</div>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-diamond"></i>
+                            <div class="detail-title">目標用戶</div>
+                        </div>
+                        <div class="detail-text">本系統的主要使用者為管理者、館員、工讀生與維修人員，針對不同角色需求提供相應功能，以提升巡檢與維修的作業效率。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zone m-0 row w-100" data-aos="fade-up">
+            <div class="section-title col-12 col-xxl-4 col-lg-4 col-md-4 mb-4">
+                <div class="section-title-text">當前現況</div>
+                <div class="section-title-bg-text">Current Situation</div>
+                <hr class="title-text-decorative-line">
+            </div>
+            <div class="section-info col-12 col-md-12 col-lg-8 col-xxl-8">
+                <div class="info-list">
+                    <ol class="project-details-order">
+                        <li class="detail-item">
+                            <div class="detail-title">班表溝通流程繁瑣</div>
+                            <div class="detail-text">班表的傳遞方式主要依賴於群組消息，容易造成訊息遺漏或誤解，進而影響工作安排的準確性與效率。</div>
+                        </li>
+                        <li class="detail-item">
+                            <div class="detail-title">巡檢與報修分離</div>
+                            <div class="detail-text">巡檢人員現場異常發現需依賴訊息或紙本進行回報，無法有效整合報修與巡檢數據。</div>
+                        </li>
+                        <li class="detail-item">
+                            <div class="detail-title">數據無法集中管理</div>
+                            <div class="detail-text">維修、保養與巡檢紀錄分散，管理人員難以及時掌握館內所有設備的狀況，缺乏全局數據支持決策。</div>
+                        </li>
+                        <li class="detail-item">
+                            <div class="detail-title">人員管理不易</div>
+                            <div class="detail-text">館內有許多工讀生，因為缺乏有效的管理工具，無法準確掌握每位工讀生的到班情況，對於工作安排與監督造成困擾。</div>
+                        </li>
+                    </ol>
+                    <img class="section-img section-img-lg" src="../wwwroot/img/Inspection/Inspection-3.png">
+                    <img class="section-img section-img-sm" src="../wwwroot/img/Inspection/Inspection-3_sm.png">
+                </div>
+            </div>
+        </div>
+        <div class="zone m-0 row w-100" data-aos="fade-up">
+            <div class="section-title col-12 col-xxl-4 col-lg-4 col-md-4 mb-4">
+                <div class="section-title-text">產品訴求</div>
+                <div class="section-title-bg-text">Goals</div>
+                <hr class="title-text-decorative-line">
+            </div>
+            <div class="section-info col-12 col-md-12 col-lg-8 col-xxl-8">
+                <div>為了解決上述問題，我們開發了一套 巡檢報修雲端管理系統，以實現管理的數字化、智能化與高效化：</div>
+                <div class="info-list">
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-diamond"></i>
+                            <div class="detail-title">後台管理</div>
+                        </div>
+                        <div class="detail-text">1. 透過上傳班表，系統可自動分配工作給相關人員，減少排班與溝通的人工成本。<br>2. 集中管理所有展品與設備的維修、保養紀錄，並提供異常巡檢狀況的即時反饋，幫助管理人員快速決策。<br>3. 提供人員到班記錄與QRcode打卡功能，協助管理者清楚掌握工讀生的到班執行情況。</div>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-diamond"></i>
+                            <div class="detail-title">前台應用</div>
+                        </div>
+                        <div class="detail-text">1. 巡檢人員可直接在現場填報巡檢記錄並即時上傳至系統，確保數據的即時性與準確性。<br>2. 當發現異常時，可通過系統直接發起報修，縮短問題處理時間，提升運營效率。</div>
+                    </div>
+                </div>
+                <div>這套系統將全面提升日常運營效率，實現數據集中化管理，幫助用戶告別傳統手動流程，邁向高效智能的工作模式。</div>
+                <img class="section-img section-img-lg" src="../wwwroot/img/Inspection/Inspection-4.png">
+            </div>
+        </div>
+        <div class="zone zone-full m-0" data-aos="fade-up">
+            <div class="section-info">
+                <div class="section-title">
+                    <div class="section-title-text">設計規劃</div>
+                    <div class="section-title-bg-text">Design Planning</div>
+                    <hr class="title-text-decorative-line">
+                </div>
+                <div class="planning-flow">
+                    <div class="planning-flow-item">業務流程梳理</div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <img src="/wwwroot/img/design-planning-arrow-left.png" class="flow-arrow flow-arrow-left" id="flow-arrow-left-1">
+                    <div class="planning-flow-item">用戶調研工作</div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <img src="/wwwroot/img/design-planning-arrow-left.png" class="flow-arrow flow-arrow-left" id="flow-arrow-left-2">
+                    <div class="planning-flow-item">功能流程分類</div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <img src="/wwwroot/img/design-planning-arrow-right.png" class="flow-arrow flow-arrow-right" id="flow-arrow-right-1">
+                    <div class="planning-flow-item">效率核心價值</div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <img src="/wwwroot/img/design-planning-arrow-right.png" class="flow-arrow flow-arrow-right" id="flow-arrow-right-2">
+                    <div class="planning-flow-item">視覺交互設計</div>
+                </div>
+                <div class="info-list">
+                    <div class="planning-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-diamond"></i>
+                            <div class="detail-title">產品層面</div>
+                        </div>
+                        <div class="planning-item">
+                            <div class="sub-title">降低學習與認知成本</div>
+                            <div class="sub-detail">
+                                <div class="sub-order">1</div>
+                                <div class="sub-content">提供直觀清晰的操作介面，讓管理人員與巡檢人員能快速上手操作，無需長時間學習。</div>
+                            </div>
+                            <div class="sub-detail">
+                                <div class="sub-order">2</div>
+                                <div class="sub-content">整合班表上傳、自動工作分配、維修與保養數據查詢等功能於同一平台，避免用戶在不同系統間切換操作，簡化操作並減少學習門檻。</div>
+                            </div>
+                        </div>
+                        <div class="planning-item">
+                            <div class="sub-title">操作情境設計</div>
+                            <div class="detail-text m-0">基於用戶實際操作場景，分析巡檢人員與管理人員的操作目標與心理需求，設計出貼合需求的引導功能，提升操作的流暢度與直觀性。</div>
+                        </div>
+                    </div>
+                    <div class="planning-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-diamond"></i>
+                            <div class="detail-title">體驗層面</div>
+                        </div>
+                        <div class="planning-item">
+                            <div class="sub-title">效率為先</div>
+                            <div class="sub-detail">
+                                <div class="sub-order">1</div>
+                                <div class="sub-content">管理人員可透過後台快速查詢展品與設備的維修、保養紀錄，避免繁瑣的資料篩選和多系統切換，提升整體操作效率。</div>
+                            </div>
+                            <div class="sub-detail">
+                                <div class="sub-order">2</div>
+                                <div class="sub-content">巡檢人員能在現場快速完成即時填報，並利用多種方式定位異常設備，簡化操作步驟，提高作業效率。</div>
+                            </div>
+                        </div>
+                        <div class="planning-item">
+                            <div class="sub-title">安全感和穩定性</div>
+                            <div class="sub-detail">
+                                <div class="sub-order">1</div>
+                                <div class="sub-content">任務分配狀態清晰，班表上傳後可自動分配工作，讓人員清楚了解自身任務，避免混亂。</div>
+                            </div>
+                            <div class="sub-detail">
+                                <div class="sub-order">2</div>
+                                <div class="sub-content">巡提供操作步驟回饋與提示，特別是關鍵操作（如刪除、送出）時，彈出二次確認視窗，有效降低誤操作風險。</div>
+                            </div>
+                            <div class="sub-detail">
+                                <div class="sub-order">3</div>
+                                <div class="sub-content">當設備維修逾期或保養到期時，系統會主動推送通知提醒，幫助用戶快速應對潛在問題，減少因延誤帶來的風險。</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="planning-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-diamond"></i>
+                            <div class="detail-title">設計層面</div>
+                        </div>
+                        <div class="planning-item">
+                            <div class="sub-title">提升效率</div>
+                            <div class="sub-detail">
+                                <div class="sub-order">1</div>
+                                <div class="sub-content">管理人員可透過後台快速查詢展品與設備的維修、保養紀錄，避免繁瑣的資料篩選和多系統切換，提升整體操作效率。</div>
+                            </div>
+                            <div class="sub-detail">
+                                <div class="sub-order">2</div>
+                                <div class="sub-content">巡檢人員能在現場快速完成即時填報，並利用多種方式定位異常設備，簡化操作步驟，提高作業效率。</div>
+                            </div>
+                        </div>
+                        <div class="planning-item">
+                            <div class="sub-title">智能通知提醒</div>
+                            <div class="sub-detail">
+                                <div class="sub-order">1</div>
+                                <div class="sub-content">維修逾期通知：當設備的預計維修時間逾期時，系統會自動跳出通知，提醒相關人員跟進處理。</div>
+                            </div>
+                            <div class="sub-detail">
+                                <div class="sub-order">2</div>
+                                <div class="sub-content">保養到期提醒：根據設備保養週期，主動推送保養到期通知，避免因延誤導致設備問題。</div>
+                            </div>
+                        </div>
+                        <div class="planning-item">
+                            <div class="sub-title">防呆設計</div>
+                            <div class="detail-text m-0">二次確認提示：在進行刪除或送出等關鍵操作時，系統會彈出二次確認提示，給予用戶取消或修改的機會，有效避免誤操作，提升使用安全性。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zone m-0 row w-100" data-aos="fade-up">
+                <div class="section-title col-12 col-xxl-4 col-lg-4 col-md-4 mb-4">
+                    <div class="section-title-text">流程示意圖</div>
+                    <div class="section-title-bg-text">Task Flow</div>
+                    <hr class="title-text-decorative-line">
+                </div>
+            <div class="section-info col-12 col-md-12 col-lg-8 col-xxl-8">
+                <div class="d-flex align-items-center flex-column gap-3">
+                    <img src="/wwwroot/img/Inspection/FlowChart.png" class="flow-img img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    <!-- Modal -->
+                    <div class="modal fade" id="imageModal" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content border-0">
+                            <div class="modal-body p-0">
+                                <img src="/wwwroot/img/Inspection/FlowChart.png" class="img-fluid w-100" />
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>*此為巡檢/保養簡易流程圖</div>
+                </div>
+            </div>
+        </div>
+        <div class="zone zone-full" data-aos="fade-up">
+            <div class="section-info">
+                <div class="section-title">
+                    <div class="section-title-text">色彩規範</div>
+                    <div class="section-title-bg-text">Color Guidelines</div>
+                    <hr class="title-text-decorative-line">
+                </div>
+                <div class="color-guildelines-content">
+                    <div class="color-description">包含主色、輔色、成功色、提示色、危險色，用於統一視覺風格，區分操作層級，提升使用體驗。</div>
+                    <div class="color-group">
+                        <div class="color-item">
+                            <div class="color-block" style="background-color: #388265;"></div>
+                            <div class="color-info">
+                                <div class="color-name">Primary</div>
+                                <div class="color-ticket">#388265</div>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-block" style="background-color: #A4CD35;"></div>
+                            <div class="color-info">
+                                <div class="color-name">Secondary</div>
+                                <div class="color-ticket">#A4CD35</div>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-block" style="background-color: #0D9E35;"></div>
+                            <div class="color-info">
+                                <div class="color-name">Success</div>
+                                <div class="color-ticket">#0D9E35</div>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-block" style="background-color: #FF7628;"></div>
+                            <div class="color-info">
+                                <div class="color-name">Notification</div>
+                                <div class="color-ticket">#FF7628</div>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-block" style="background-color: #FF1E00;"></div>
+                            <div class="color-info">
+                                <div class="color-name">Danger</div>
+                                <div class="color-ticket">#FF1E00</div>
+                            </div>
+                        </div>
+                        <div class="brush-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="165" height="86" viewBox="0 0 165 86" fill="currentColor">
+                                <path d="M160.336 0.516592L160.712 0.559561L160.94 0.5996C163.274 1.07177 164.852 3.29677 164.494 5.67773C164.241 7.36461 163.082 8.69032 161.585 9.2373C161.522 9.29936 161.449 9.37154 161.359 9.45897C160.321 10.4709 158.917 11.7298 143.992 23.5351C129.924 34.663 104.442 54.8977 88.8506 66.8525L85.8711 69.1279C77.488 75.4983 72.4763 79.1841 69.2686 81.3643C66.2804 83.3951 64.5655 84.3288 62.9082 84.8701L62.5772 84.9736C61.2198 85.3773 59.9269 85.59 58.5274 85.5869C57.4153 85.5844 55.3648 85.4625 53.5791 84.2715C51.6169 82.9627 50.814 80.9917 50.5332 79.5098C50.2557 78.0447 50.3663 76.684 50.6133 75.4609L50.6865 75.1367C50.8776 74.355 51.2114 73.4016 51.5361 72.5098C51.9473 71.3805 52.4965 69.9485 53.1357 68.2861C54.4232 64.9378 56.1305 60.516 58.0449 55.2012L58.9541 52.6357C60.8984 47.0457 61.6363 44.1611 61.8408 42.5273L61.9336 41.6904C62.0085 40.9 62.0299 40.2468 62 39.7129C61.9636 39.0639 61.8607 38.7984 61.8408 38.7519C61.8339 38.7417 61.8241 38.727 61.8106 38.709L61.8066 38.7051C61.7615 38.7074 61.7055 38.7082 61.6367 38.7129C61.5562 38.7184 61.4239 38.7282 61.2686 38.7383L60.7598 38.7646C60.0189 38.7897 59.0889 39.0466 57.5713 39.792L56.8838 40.1416C56.1559 40.5242 53.6816 42.1642 49.6514 45.1143C46.2332 47.6163 41.8809 50.9225 36.9033 54.8721L34.7324 56.6035C30.8088 59.7501 29.1787 61.2824 26.7441 63.4336L25.6426 64.4004C13.8209 74.6884 10.2543 78.9298 8.48145 81.0947C6.9068 83.0174 4.07121 83.2992 2.14845 81.7246C0.226142 80.1499 -0.0558538 77.3152 1.51856 75.3926C3.68342 72.749 7.62636 68.1477 19.7334 57.6113L20.7666 56.7051C23.0998 54.6417 25.0168 52.8596 29.1025 49.583L31.3076 47.8232C36.3686 43.8075 40.8138 40.43 44.335 37.8525C48.2349 34.9978 51.2659 32.9277 52.6963 32.1758L53.5527 31.7383C55.5879 30.7317 57.8836 29.8563 60.457 29.7695L61.0039 29.7207C61.8757 29.6577 63.6308 29.6339 65.4551 30.3926L65.6729 30.4883C66.7478 30.9825 67.5822 31.7179 68.1191 32.2685C68.6572 32.8203 69.1748 33.4744 69.5859 34.166L69.7549 34.4639L69.9004 34.7451C71.1587 37.2872 71.1216 40.2705 70.8857 42.6377L70.7715 43.6455C70.4448 46.255 69.4299 49.926 67.4307 55.6631L66.5127 58.251C64.561 63.6694 62.8201 68.1773 61.5361 71.5166C60.8897 73.198 60.3715 74.5498 59.9932 75.5889C59.8759 75.9108 59.7769 76.1904 59.6943 76.4307C59.7937 76.4054 59.8999 76.3799 60.0117 76.3467L60.1807 76.293C60.6357 76.1365 61.5784 75.7087 64.209 73.9209C67.1961 71.8907 72.0348 68.3393 80.4258 61.9629L83.3887 59.7002C98.894 47.8108 124.29 27.6445 138.409 16.4766C153.548 4.50177 154.463 3.61252 155.076 3.01464C155.326 2.77072 155.942 2.14099 156.519 1.70409C157.144 1.23001 158.489 0.370009 160.336 0.516592Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zone zone-demo p-0">
+            <img src="../wwwroot/img/Inspection/Inspection-demo-1.png" data-aos="fade-up">
+            <img src="../wwwroot/img/Inspection/Inspection-demo-2.jpg" data-aos="fade-up">
+        </div>
+        <!-- 置頂按鈕 -->
+        <div class="top-btnpage"></div>
+    </div>
+    <!-- Footer -->
+    <footer class="footerpage"></footer>
+</body>
+<script>
+    $(".top-btnpage").load("../top-btn.html"); 
+    $(".headerpage").load("../Header.html"); 
+    $(".footerpage").load("../Footer.html");
+</script>
+<script src="../wwwroot/lib/jquery/dist/jquery.min.js"></script>
+<script src="../wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</html>
