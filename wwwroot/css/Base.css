@@ -1257,7 +1257,7 @@ h1, h2 {
     .link-work {
         border: none;
     }
-    .container-fluid {
+    .navbar>.container-fluid {
         align-items: flex-start;
     }
 }
