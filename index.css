@@ -179,6 +179,9 @@
 .project-tag {
     justify-content: start;
 }
+.fa-arrow-right {
+    color: #B29382;
+}
 /* 我的筆電螢幕 */
 @media screen and (max-width:1518px) {
     .name {

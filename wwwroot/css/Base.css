@@ -237,6 +237,7 @@ nav > div > a {
     display: flex;
     gap: 24px;
     font-size: 18px;
+    align-items: center;
 }
 .planning-flow-item {
     color: #FFFF;
@@ -1092,6 +1093,9 @@ h1, h2 {
     }
     #flow-arrow-right-2 {
         top: 255px;
+    }
+    .fa-arrow-right {
+        display: none;
     }
     .flow-img {
         width: 100%;
