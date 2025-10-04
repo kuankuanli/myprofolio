@@ -1252,8 +1252,10 @@ h1, h2 {
     }
     .nav-right-tool {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 1.2rem;
+        width: 100%;
+        align-items: flex-end;
     }
     .nav-right-tool.is-open {
         display: flex;
@@ -1277,6 +1279,9 @@ h1, h2 {
     }
     .link-work {
         border: none;
+    }
+    .container-fluid {
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 767px){
