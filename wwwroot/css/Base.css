@@ -1077,10 +1077,10 @@ h1, h2 {
         position: absolute;
     }
     .flow-arrow-left {
-        right: 170px;
+        right: 158px;
     }
     .flow-arrow-right {
-        left: 170px;
+        left: 158px;
     }
     #flow-arrow-left-1 {
         top: 42px;
