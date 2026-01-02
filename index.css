@@ -117,15 +117,6 @@
     grid-column: auto / span 2;
     width: calc(50% - 24px);
 }
-.home-title {
-    grid-column: auto / span 2;
-    margin-top: 80px;
-}
-.home-title::after {
-    background: #5ACBC4;
-    top: 25px;
-    height: 13px;
-}
 .project-content {
     display: grid;
     margin-top: 8px;

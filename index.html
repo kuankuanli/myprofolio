@@ -20,11 +20,11 @@
 
 
     <!-- AOS -->
+    <link rel="stylesheet" href="./wwwroot/css/base.css" asp-append-version="true" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- 共用CSS -->
-    <link rel="stylesheet" href="./wwwroot/css/Base.css" asp-append-version="true" />
-    <link rel="stylesheet" href="./index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="index.css" asp-append-version="true" />
 </head>
 
 <body>
@@ -41,9 +41,24 @@
         </div>
         <div class="zone" id="zone-work">
             <h2 class="title-CN text-center home-title" id="Web" data-aos="fade-up">Web</h2>
+            <!-- <div class="project" data-aos="fade-up">
+                <a href="uiux/whoscall.html">
+                    <img src="wwwroot/img/index/whoscall-0.png">
+                </a>
+                <div class="project-content">
+                    <div class="project-name">Whoscall 安心守望</div>
+                    <div class="project-description">把每一次守望，都變成彼此的安心</div>
+                    <div class="project-info project-tag">
+                        <div class="tag-item">#產品設計</div>
+                        <div class="tag-item">#UX設計</div>
+                        <div class="tag-item">#使用者研究</div>
+                        <div class="tag-item">#設計迭代</div>
+                    </div>
+                </div>
+            </div> -->
             <div class="project" data-aos="fade-up">
-                <a href="UIUX/Inspection.html">
-                    <img src="wwwroot/img/Index/Inspection-1.png">
+                <a href="uiux/inspection.html">
+                    <img src="wwwroot/img/index/inspection-1.png">
                 </a>
                 <div class="project-content">
                     <div class="project-name">巡檢報修管理系統</div>
@@ -56,8 +71,8 @@
             </div>
             <div class="project" data-aos="fade-up">
                 <a class="disabled">
-                <!-- <a href="UIUX/Big-Screen.html"> -->
-                    <img src="wwwroot/img/Index/Big-Screen-1.png">
+                <!-- <a href="uiux/big-screen.html"> -->
+                    <img src="wwwroot/img/index/big-screen-1.png">
                 </a>
                 <div class="project-content">
                     <div class="project-name">智慧水務監控平台</div>
@@ -70,8 +85,8 @@
                 </div>
             </div>
             <div class="project" data-aos="fade-up">
-                <a href="UIUX/Petri.html">
-                    <img src="wwwroot/img/Index/培養皿-1.png">
+                <a href="uiux/petri.html">
+                    <img src="wwwroot/img/index/petri-1.png">
                 </a>
                 <div class="project-content">
                     <div class="project-name">Petri培養皿｜線上學習平台</div>
@@ -84,8 +99,8 @@
                 </div>
             </div>
             <div class="project" data-aos="fade-up">
-                <a href="UIUX/Firecommand.html">
-                    <img src="wwwroot/img/Index/Firecommand-1.png">
+                <a href="uiux/firecommand.html">
+                    <img src="wwwroot/img/index/firecommand-1.png">
                 </a>
                 <div class="project-content">
                     <div class="project-name">FIRECOMMAND｜火場安全管制系統</div>
@@ -99,8 +114,8 @@
             </div>
             <h2 class="title-CN text-center home-title" data-aos="fade-up">LINE@</h2>
             <div class="project project-self" data-aos="fade-up">
-                <a href="UIUX/Hair-Salon.html">
-                    <img src="wwwroot/img/Index/沙龍髮品-1.png">
+                <a href="uiux/hair-salon.html">
+                    <img src="wwwroot/img/index/hair-salon-1.png">
                 </a>
                 <div class="project-content">
                     <div class="project-name">沙龍髮品</div>
@@ -112,8 +127,8 @@
             </div>
             <h2 class="title-CN text-center home-title" id="Screen" data-aos="fade-up">Screen</h2>
             <div class="project project-self" data-aos="fade-up">
-                <a href="UIUX/Screen.html">
-                    <img src="wwwroot/img/Index/螢幕-1.png">
+                <a href="uiux/screen.html">
+                    <img src="wwwroot/img/index/screen-1.png">
                 </a>
                 <div class="project-content">
                     <div class="project-name">消防車體螢幕</div>
@@ -142,11 +157,12 @@
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
-    <script src="/myprofolio/Base.js"></script>
+    <!-- 共用JS -->
+    <script src="./base.js"></script>
     <script>
-        $(".top-btnpage").load("/myprofolio/top-btn.html"); 
-        $(".headerpage").load("/myprofolio/Header.html"); 
-        $(".footerpage").load("/myprofolio/Footer.html");
+        $(".top-btnpage").load("./top-btn.html"); 
+        $(".headerpage").load("./header.html"); 
+        $(".footerpage").load("./footer.html");
     </script>
 </body>
 
