@@ -1,0 +1,24 @@
+.role-card {
+    width: 16rem;
+}
+.lottery-img img {
+    display: flex;
+    align-items: center;
+    max-width: 14rem;
+}
+.lottery-img {
+    width: 10rem;
+}
+.pattern-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+.pattern-img img {
+    width: 5rem;
+}
+/* 所有小螢幕 */
+@media screen and (max-height: 500px) {
+    .flow-img {
+        width: 29rem;
+    }
+}
