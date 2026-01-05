@@ -14,6 +14,45 @@
     top: 6px;
     z-index: -1;
 }
+.sub-order {
+    background: #9EDFD7;
+    border: none;
+    font-weight: 500;
+}
+.persona-role-protector .persona-card {
+    border-color: #399A35;
+}
+.persona-role-protector svg, .persona-role-protector .identity {
+    color: #399A35;
+}
+.persona-role-protector .persona-hashtag div {
+    background-color: #399A35;
+}
+ .persona-role-protector .persona-label {
+    border-left-color: #87B285;
+ }
+
+.persona-role-protected .persona-card {
+    border-color: #356E9A;
+}
+.persona-role-protected svg, .persona-role-protected .identity {
+    color: #356E9A;
+}
+.persona-role-protected .persona-hashtag div {
+    background-color: #356E9A;
+}
+ .persona-role-protected .persona-label {
+    border-left-color: #6798BE;
+ }
+.identity {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+.persona-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #474747;
+}
 /* 所有小螢幕 */
 @media screen and (max-width: 1366px) {
     

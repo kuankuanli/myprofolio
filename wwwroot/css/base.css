@@ -682,6 +682,72 @@ h1, h2 {
 .detail-item::marker {
     font-size: 18px;
 }
+.persona-card-group {
+    display: flex;
+}
+
+.persona-card {
+    padding: 1rem 1.1rem;
+    border: 2px solid;
+    border-radius: 1rem;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+.identity {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+.peosona-img {
+    border-radius: 10px;
+    width: 6.7em;
+}
+.persona-majoir {
+    display: flex;
+    gap: 1.1rem;
+}
+.persona-label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-left: 3px solid;
+    padding-left: 0.4rem;
+    color: #474747;
+}
+.peosona-context {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.persona-content {
+    padding-left: 0.7rem;
+    font-size: 16px;
+}
+.persona-age {
+    color: #949494;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.persona-hashtag {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.persona-hashtag div {
+    border-radius: 100px;
+    width: fit-content;
+    color: #FFF;
+    padding: 0.2rem 1rem;
+}
+.role-solution {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 16px;
+}
+.role-solution svg {
+    margin-right: 4px;
+}
 /*針對縱向 css去撰寫*/
 @media (orientation: portrait) {
     .landscape-alert {
