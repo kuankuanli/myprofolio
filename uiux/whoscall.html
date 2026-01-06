@@ -189,7 +189,7 @@
                 <hr>
                 <div class="d-flex flex-column gap-3">
                     <div>綜合量化與質化研究結果，我們將設計方向收斂為以下核心問題：</div>
-                    <strong>我們如何設計一個以 親近的人 為中心，能自然擴散並形成 群體共同守護 的機制，在不造成監控壓力的前提下，鼓勵主動分享和回報威脅資訊，並 建立長期使用的成就感？</strong>
+                    <strong>我們如何設計一個以 <strong class="high-light-decoration">親近的人</strong> 為中心，能自然擴散並形成 <strong class="high-light-decoration">群體共同守護</strong> 的機制，在不造成監控壓力的前提下，鼓勵主動分享和回報威脅資訊，並 <strong class="high-light-decoration">建立長期使用的成就感</strong>？</strong>
                 </div>
             </div>
         </div>
@@ -219,9 +219,11 @@
                                             <div class="persona-label">使用情境</div>
                                             <div class="persona-content">平時無法即時陪在家人身邊</div>
                                             <div class="persona-label">行為特徵</div>
-                                            <div class="persona-content">1. 願意協助家人判斷風險，但不希望被頻繁打擾</div>
-                                            <div class="persona-content">2. 希望在「真正需要介入」時才被通知</div>
-                                            <div class="persona-content">3. 對查證結果有回饋動機，希望協助行為能被記錄</div>
+                                            <div class="persona-content">
+                                                1. 願意協助家人判斷風險，但不希望被頻繁打擾<br>
+                                                2. 希望在「真正需要介入」時才被通知<br>
+                                                3. 對查證結果有回饋動機，希望協助行為能被記錄<br>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -250,14 +252,16 @@
                                         <div class="identity">被守望者</div>
                                         <div class="peosona-context">
                                             <div class="persona-label">裝置使用</div>
-                                            <div class="persona-content">Android為主</div>
+                                            <div class="persona-content">Android 為主</div>
                                             <div class="persona-label">科技熟悉度</div>
                                             <div class="persona-content">能接聽電話、閱讀簡單提示，但不熟悉多步驟操作</div>
                                             <div class="persona-label">行為特徵</div>
-                                            <div class="persona-content">1. 接到陌生來電時，仍可能接聽以避免錯過重要通知</div>
-                                            <div class="persona-content">2. 通話過程中難以同時查證或操作其他 App</div>
-                                            <div class="persona-content">3. 對系統警示的信任度有限，但高度信任家人提供的提醒</div>
-                                            <div class="persona-content">4. 不希望被過度干涉，保有最終決定權</div>
+                                            <div class="persona-content">
+                                                1. 接到陌生來電時，仍可能接聽以避免錯過重要通知<br>
+                                                2. 通話過程中難以同時查證或操作其他 App<br>
+                                                3. 對系統警示的信任度有限，但高度信任家人提供的提醒<br>
+                                                4. 不希望被過度干涉，保有最終決定權
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -289,10 +293,436 @@
                     在缺乏即時支援的情況下，使用者往往需要獨自面對陌生來電的壓力與風險，家人多半只能在事件發生後，才透過新聞或轉述得知結果。
                 </div>
                 <video width="400" id="zone-video" data-aos="fade-up" controls>
-                    <source src="../wwwroot/img/whoscall/solution-journey-3.mp4" type="video/mp4">
+                    <source src="../wwwroot/img/whoscall/as-is-journey.mp4" type="video/mp4">
                 </video>
             </div>
-        </div>        
+        </div>
+        <div class="zone m-0 row w-100" data-aos="fade-up">
+            <div class="section-title col-12 col-xxl-3 col-lg-3 col-md-3 mb-4">
+                <div class="section-title-text">關鍵定義</div>
+                <hr class="title-text-decorative-line">
+            </div>
+            <div class="section-info col-12 col-md-12 col-lg-9 col-xxl-9">
+                <div class="new-hmw">
+                    如何在 <strong class="high-light-decoration">不提高操作負擔、也不造成被監控感</strong> 的前提下，
+                    <br>於陌生來電的關鍵情境中，提供使用者一個 <strong class="high-light-decoration">可被依賴的安心支援系統</strong>？
+                </div>
+            </div>
+        </div>
+        <div class="zone m-0 row w-100" data-aos="fade-up">
+            <div class="section-title col-12 col-xxl-3 col-lg-3 col-md-3 mb-4">
+                <div class="section-title-text">關鍵設計挑戰</div>
+                <hr class="title-text-decorative-line">
+            </div>
+            <div class="section-info col-12 col-md-12 col-lg-9 col-xxl-9">
+                <div class="d-flex flex-column gap-2">
+                    <div class="fw-bold">1. 來電當下：如何即時降低使用者焦慮並引導行為？</div>
+                    <div>在來電當下，使用者往往處於緊張與猶豫狀態，即使系統提供風險標示，仍缺乏一個能立即降低焦慮、引導行為的即時訊號。</div>
+                    <img class="call-state" src="../wwwroot/img/whoscall/call-state.png">
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <div class="fw-bold">2. 來電後：如何讓使用者快速確認來電安全性？</div>
+                    <div>當來電未能即時判斷，或使用者選擇未接聽時，使用者仍可能對該通來電的安全性感到不安。
+                        <br>現有流程下，使用者需自行描述情況、轉述號碼，對高風險族群而言操作成本高、也容易延誤確認時機。
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <div class="fw-bold">3. 長期使用：如何讓守望關係被感知並持續建立？</div>
+                    <div>守望行為多半發生在零散且被動的情境中，守望者與被守望者難以清楚感知彼此的守望成果。
+                        <br>缺乏可回顧的紀錄，使守望關係容易隨時間淡化，也降低了持續使用與投入的動機。
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="zone m-0 row w-100" data-aos="fade-up">
+            <div class="section-title col-12 col-xxl-3 col-lg-3 col-md-3 mb-4">
+                <div class="section-title-text">建立假設</div>
+                <hr class="title-text-decorative-line">
+            </div>
+            <div class="section-info col-12 col-md-12 col-lg-9 col-xxl-9">
+                <div>經由訪談與前期假設探索，我們發現單純提供防詐提醒，容易造成使用者反感或忽略；因此團隊將問題聚焦於以下核心挑戰：</div>
+                <div class="d-flex flex-column gap-3">
+                    <div class="suppose-card">
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <div class="fw-bold">假設一、來電當下的即時安撫</div>
+                        </div>
+                        <div>我們假設：
+                            <br>若在陌生來電顯示畫面中，以守望者的溫情喊話取代單純的風險警示，將有助於降低使用者在來電當下的焦慮感，並引導其做出較安全的應對選擇。
+                        </div>
+                    </div>
+                    <div class="suppose-card">
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <div class="fw-bold">假設二、降低事後確認的行動成本</div>
+                        </div>
+                        <div>我們假設：
+                            <br>若提供被守望者一個可快速向守望者確認陌生來電的機制，並減少轉述與操作步驟，將能縮短確認時間，並降低因不確定感而產生的後續風險行為。
+                        </div>
+                    </div>
+                    <div class="suppose-card">
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <div class="fw-bold">假設三、讓守望關係被持續感知</div>
+                        </div>
+                        <div>我們假設：
+                            <br>若將零散的守望行為整理為可回顧的每週守望週報，能讓守望者與被守望者清楚感知守望成果，有助於建立長期的信任感，並提升功能的持續使用意願。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="zone m-0 row w-100" data-aos="fade-up">
+            <div class="section-title col-12 col-xxl-3 col-lg-3 col-md-3 mb-4">
+                <div class="section-title-text">解法定義</div>
+                <hr class="title-text-decorative-line">
+            </div>
+            <div class="section-info col-12 col-md-12 col-lg-9 col-xxl-9">
+                <div class="d-flex flex-column gap-4">
+                    <div>
+                        <li class="design-solution">設計目標</li>
+                        <div>在不增加被守望者操作負擔的前提下，於陌生或高風險來電情境中，提供即時、可信且可行動的支援方式，並建立守望者與被守望者之間穩定、可被理解的守望關係。</div>
+                    </div>
+                    <div>
+                        <li class="design-solution">設計原則</li>
+                        <div>
+                            1. 低認知負擔優先在來電等高壓、分心的情境下，介面需以最少資訊傳達最關鍵的訊息，避免複雜判斷。<br>
+                            2. 支援應出現在關鍵時刻，而非事後補救守望機制需介入於「可能發生風險的當下」，而非等到事件結束後才提供回饋。<br>
+                            3. 守望關係需被具象化與持續化守望不只是單次提醒，而是透過視覺、回饋與週期性紀錄，讓雙方感受到「正在被關心」。
+                        </div>
+                    </div>
+                    <div>
+                        <li class="design-solution">解法方向</li>
+                        <div>
+                            本專案將守望機制拆解為三個不同時機點的支援層級：<br>
+                            <div class="mb-2">
+                            1. 來電當下的情緒支持<br>
+                            2. 事中可行動的求助與介入<br>
+                            3. 事後的回顧與信任累積
+                            </div>
+                            透過不同層級的介面設計，回應被守望者在各階段的實際需求。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="zone m-0 row w-100 design-output" data-aos="fade-up">
+            <div class="section-title col-12 col-xxl-3 col-lg-3 col-md-3 mb-4">
+                <div class="section-title-text">設計產出</div>
+                <hr class="title-text-decorative-line">
+            </div>
+            <div class="section-info col-12 col-md-12 col-lg-9 col-xxl-9 gap-5">
+                <div>
+                    <h5>在小組多次的討論後，我們根據關注的用戶需求、收斂結果以及新的HMW，
+                        <h4>設計出一個核心功能<strong class="high-light-decoration">「 安心守望 」</strong></h4>
+                    </h5>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <h4 class="design-title">一、可疑/高風險來電當下： 三層守望提醒與守望介入機制</h4>
+                    <div class="d-flex flex-column gap-3">
+                        <div>
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <div class="fw-bold">對應假設：</div>
+                            </div>
+                            <div class="ps-4">在可疑或高風險來電情境中，被守望者可能因緊張、對方話術或情緒壓力而延長通話時間，若系統能於關鍵時間點介入提醒，可有效降低風險升高的可能性。</div>
+                        </div>
+                        <div>
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <div class="fw-bold">設計說明：</div>
+                            </div>
+                            <div class="ps-4">當被守望者接聽可疑/高風險來電後，系統將分成 <strong>三層守望</strong> 介入：</div>
+                        </div>
+                        <img class="three-level-img ps-4" src="../wwwroot/img/whoscall/three-level.png">
+                        <div class="d-flex flex-column gap-3 ps-4">
+                            <div class="d-flex flex-column gap-1">
+                                <div class="level-title">第一層  |  來電時</div>
+                                <div>在來電畫面中，系統顯示由守望者預先設定的溫情提示文字，以「情感連結」取代警告式提醒，避免增加使用者的心理壓力。</div>
+                            </div>
+                            <div class="d-flex flex-column gap-1">
+                                <div class="level-title">第二層  |  通話達 15 秒</div>
+                                <div>系統以震動方式提醒被守望者提高警覺，在不打斷通話的前提下，溫和提示風險存在。</div>
+                            </div>
+                            <div class="d-flex flex-column gap-1">
+                                <div class="level-title">第三層  |  通話達 30 秒</div>
+                                <div>系統主動通知守望者，提醒其被守望者正與高風險來電持續通話，以提高守望者的警覺與後續介入準備。</div>
+                            </div>
+                            <div>此機制避免即時強制中斷通話，而是透過「被守望者自我覺察」與「守望者同步知情」的雙軌設計，在尊重使用者自主性的同時，提高整體守望效益。</div>
+                        </div>
+                        <div class="note-card ms-4">
+                            <div class="fw-bold">
+                                <i class="fa-solid fa-circle-info"></i>
+                                為甚麼是 15 秒、30 秒?
+                            </div>
+                            <div>
+                                根據《亞洲詐騙調查報告 - 台灣篇》研究顯示，約 27% 的詐騙案件在一小時內即完成誘騙，因此防詐介入必須足夠即時。
+                                <br>我們將通話 15 秒視為風險警示起點，30 秒視為需要守護者介入的關鍵時機，以提高在詐騙黃金時間內阻止風險的成功率。
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <li class="fw-bold my-2">UI Flow</li>
+                        <img src="../wwwroot/img/whoscall/ui-flow-1.png">
+                    </div>
+                    <div>
+                        <li class="fw-bold my-2">UI 介面</li>
+                        <img src="../wwwroot/img/whoscall/ui-design-1.png">
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <h4 class="design-title">二、不明來電當下：一鍵請求守望者協助查證</h4>
+                    <div class="d-flex flex-column gap-3">
+                        <div>
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <div class="fw-bold">對應假設：</div>
+                            </div>
+                            <div class="ps-4">當被守望者接到「尚未被判定風險」的不明來電時，若能在來電當下快速請求可信對象協助查證，可降低因不確定而接聽或回撥的風險行為。</div>
+                        </div>
+                        <div>
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <div class="fw-bold">設計說明：</div>
+                            </div>
+                            <div class="ps-4">在不明來電情境下，被守望者可於來電畫面中 <strong>一鍵請求守望者協助查證</strong>，無需自行描述來電內容，即可將查證需求交由守望者處理，降低判斷與操作負擔。</div>
+                        </div>
+                        <div class="ps-4">
+                            守望者端會即時收到通知，清楚了解：
+                            <li>被守望者目前收到一通不明來電</li>
+                            <li>需要協助查詢與回報該號碼的風險狀態</li>
+                        </div>
+                        <div class="ps-4">查證完成後，守望者可回報結果，被守望者則可查看回饋內容，並 <strong>自主決定</strong> 是否封鎖號碼，避免系統或他人過度介入造成反感。</div>
+                    </div>
+                    <div>
+                        <li class="fw-bold my-2">UI Flow</li>
+                        <img src="../wwwroot/img/whoscall/ui-flow-2.png">
+                    </div>
+                    <div>
+                        <li class="fw-bold my-2">UI 介面</li>
+                        <img src="../wwwroot/img/whoscall/ui-design-2.png">
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <h4 class="design-title">三、事後回饋：守望週報（雙方可見）</h4>
+                    <div class="d-flex flex-column gap-3">
+                        <div>
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <div class="fw-bold">對應假設：</div>
+                            </div>
+                            <div class="ps-4">若守望行為能被記錄與回顧，能強化雙方對守望關係的信任與持續使用意願。</div>
+                        </div>
+                        <div>
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <div class="fw-bold">設計說明：</div>
+                            </div>
+                            <div class="ps-4">系統每週彙整守望相關事件，產出守望週報，雙方皆可查看守望成果與互動紀錄。
+                                <br>週報內容著重於：
+                                <li>守望行為的累積，而非單次危機</li>
+                                <li>正向回饋與安心感的建立</li>
+                                <li>讓守望者感受到「自己的介入是有意義的」</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <li class="fw-bold my-2">UI 介面</li>
+                        <img src="../wwwroot/img/whoscall/ui-design-3.png">
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <h4 class="design-title"><i class="fa-solid fa-circle"></i>系統限制與設計取捨 (iOS)</h4>
+                    <div class="d-flex flex-column gap-4">
+                        <div>
+                            由於 iOS 系統無法自訂原生來電畫面，且無法於通話期間疊加互動介面，本專案針對 iOS 使用者調整設計策略，將即時提示改為於 <strong>通話結束後</strong> 主動跳出提醒，詢問是否通知守望者進行後續查證。
+                            <br><br>在遵守系統限制的前提下，此方案仍保留「降低操作負擔」與「即時獲得支援」的核心設計目標，確保使用者於風險發生後能快速銜接守望機制。
+                        </div>
+                        <div class="design-limited-content">
+                            <div>
+                                <div class="fw-bold">iOS 系統限制說明</div>
+                                <div class="mt-2">1. 無法判斷使用者是否接聽來電</div>
+                                <div class="mt-1">2. 無法於通話期間進行守望方介入</div>
+                                <div class="mt-1">3. 無法在原生通話畫面上疊加自訂 UI</div>
+                            </div>
+                            <img src="../wwwroot/img/whoscall/ios-limited.png">
+                        </div>
+                    </div>
+                    <div class="note-card ms-4">
+                        <div class="fw-bold">
+                            <i class="fa-solid fa-circle-info"></i>
+                            為甚麼此專案採用 Android ?
+                        </div>
+                        <div>考量台灣 45–74 歲族群中超過半數使用 Android 裝置，且 Android 系統支援較完整的即時來電互動機制，本專案將核心守望功能設計於 Android；iOS 則以替代方案因應系統限制。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="zone m-0 row w-100" data-aos="fade-up">
+            <div class="section-title col-12 col-xxl-3 col-lg-3 col-md-3 mb-4">
+                <div class="section-title-text">易用性測試</div>
+                <hr class="title-text-decorative-line">
+            </div>
+            <div class="section-info col-12 col-md-12 col-lg-9 col-xxl-9">
+                <div>為了達到更好的體驗，我們針對現有的設計流程進行測試，並邀請了 10 位用戶參與易用性測試。</div>
+                <div class="d-flex flex-column gap-3">
+                    <div class="fw-bold">我們的核心測試重點：</div>
+                    <div>
+                        <div class="test-focus"><i class="fa-solid fa-question"></i>來電情境下的理解性</div>
+                        <div>使用者是否能在來電當下，快速理解提示的目的與可採取的行動。</div>
+                    </div>
+                    <div>
+                        <div class="test-focus"><i class="fa-solid fa-question"></i>關鍵行為的完成度</div>
+                        <div>在無任何說明的情況下，是否能順利完成「一鍵請求守望者查證」。</div>
+                    </div>
+                    <div>
+                        <div class="test-focus"><i class="fa-solid fa-question"></i>心理感受是否造成負擔</div>
+                        <div>使用者是否感受到被監控或被干涉，進而影響使用意願。</div>
+                    </div>
+                    <div>
+                        <div class="test-focus"><i class="fa-solid fa-question"></i>隱私與信任感知</div>
+                        <div>使用者是否清楚資料使用邊界，並對整體守望機制感到安心。</div>
+                    </div>
+                    <div>
+                        <div class="test-focus"><i class="fa-solid fa-question"></i>守望介入時機的接受度</div>
+                        <div>對於三層守望（15 / 30 秒）通知節奏，是否被認為合理且不具侵入性。</div>
+                    </div>
+                </div>
+                <div>整體而言，使用者能理解守望機制的核心價值，但在高壓來電情境下，仍需要更即時、低負擔且可預期的互動設計，才能提升行動意願與信任感。
+                    <br>因此，我們將設計疊代聚焦在三個方向：降低理解成本、減少心理壓力、提升使用者對守望節奏與隱私的掌控感。
+                </div>
+            </div>
+        </div>
+        <div class="zone m-0 row w-100 design-iteration" data-aos="fade-up">
+            <div class="section-title col-12 col-xxl-3 col-lg-3 col-md-3 mb-4">
+                <div class="section-title-text">設計疊代</div>
+                <hr class="title-text-decorative-line">
+            </div>
+            <div class="section-info col-12 col-md-12 col-lg-9 col-xxl-9 gap-5">
+                <div>根據使用者的反饋，我們進行了以下設計疊代：</div>
+                <div class="d-flex flex-column gap-3">
+                    <h4 class="design-title m-0">1. 重新布局</h4>
+                    <div>
+                        大部分用戶停留在頁面時，沒有意識到「我的守望者」可以往上滑，因此忽略了這個重要區塊。
+                        <br>為了提高用戶被保護的存在感，我們將「我的守望者」
+                        <span class="focus-text">向上提高一個層級</span> 
+                        ，並把這個區域改成 
+                        <span class="focus-text">點擊查看</span>。
+                    </div>
+                    <img src="../wwwroot/img/whoscall/design-iteration-1.png">
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <h4 class="design-title m-0">2. 更快速的守望連結</h4>
+                    <div>
+                        在測試過程中，部分用戶更偏好透過 QR CODE 建立即時連結。
+                        <br>因此我們新增「<span class="focus-text">掃碼功能</span>」，讓守望者與被守望者能更快速完成綁定流程。
+                    </div>
+                    <img src="../wwwroot/img/whoscall/design-iteration-2.png">
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <h4 class="design-title m-0">3. 刪除非必要功能</h4>
+                    <div>
+                        大部分用戶 <span class="focus-text">沒有需要單獨關閉15秒高風險來電提示</span> 的需求。有些用戶甚至對此開關 <span class="focus-text">感到疑惑</span>，不知道跟上面的開關有什麼分別。
+                        <br>因此我們決定移除此開關，讓介面更淺顯易懂。
+                    </div>
+                    <img src="../wwwroot/img/whoscall/design-iteration-3.png">
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <h4 class="design-title m-0">4. 新增新手步驟教學</h4>
+                    <div>
+                        有些新手用戶對守望流程不夠熟悉，首次使用時 <span class="focus-text">不知道下一步該怎麼做</span>。
+                        <br>因此我們加入「新手步驟教學」，讓用戶在首次開啟功能時，能透過分段提示快速理解守望運作方式。
+                    </div>
+                    <img src="../wwwroot/img/whoscall/design-iteration-4.png">
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <h4 class="design-title m-0">5. 自訂通知頻率 (守望者端)</h4>
+                    <div>
+                        部分測試者由於生活繁忙，<span class="focus-text">無法即時查證不明來電</span> ，且過於頻繁的通知也容易造成負擔。
+                        <br>因此我們為守望者端加入「自訂通知頻率」功能，用戶可自行選擇方便的通知時段，在該時段一次查看所有待查證來電。
+                        <br>被守望者也會在來電畫面收到提示，<span class="focus-text">安心等待查證結果</span> 。
+                    </div>
+                    <img src="../wwwroot/img/whoscall/design-iteration-5.png">
+                </div>
+            </div>
+        </div> 
+        <div class="zone m-0 row w-100 future-plan" data-aos="fade-up">
+            <div class="section-title col-12 col-xxl-3 col-lg-3 col-md-3 mb-4">
+                <div class="section-title-text">未來規劃</div>
+                <hr class="title-text-decorative-line">
+            </div>
+            <div class="section-info col-12 col-md-12 col-lg-9 col-xxl-9 gap-5">
+                <div class="d-flex flex-column gap-3">
+                    <h4 class="design-title m-0">短期 | 核心體驗驗證（MVP）</h4>
+                    <div class="d-flex gap-5">
+                        <img src="../wwwroot/img/whoscall/future-1.png">
+                        <div class="d-flex flex-column gap-2">
+                            <div>
+                                <li>推出「安心守望」核心功能，聚焦守望關係建立與來電當下的即時支援</li>
+                                <li>依據初期使用回饋，優化關鍵流程與互動節點（如邀請、查證、通知）</li>
+                                <li>補強新手引導與情境式教學，降低首次使用門檻</li>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                目標：驗證「守望」概念是否能被理解與使用，提升整體上手率與完成率。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <h4 class="design-title m-0">中期 | 守望場景擴展（Next）</h4>
+                    <div class="d-flex gap-5">
+                        <img src="../wwwroot/img/whoscall/future-2.png">
+                        <div class="d-flex flex-column gap-2">
+                            <div>
+                                <li>延伸守望觸發入口至網站、簡訊等非 App 情境，涵蓋更多真實使用場景</li>
+                                <li>將守望機制同步至「市話防詐盒」等實體設備，補足高風險族群的防護缺口</li>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                目標：擴大守望機制的防詐覆蓋範圍，讓守護不受裝置與使用情境限制。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <h4 class="design-title m-0">長期 | 行為與關係深化（Future）</h4>
+                    <div class="d-flex gap-5">
+                        <img src="../wwwroot/img/whoscall/future-3.png">
+                        <div class="d-flex flex-column gap-2">
+                            <div>
+                                <li>深化守望週報與成就回饋形式（如動畫或互動化呈現），強化守望行為的可被感知性</li>
+                                <li>發展輕量化的守望互動設計，降低參與門檻，促進守望行為的持續發生</li>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                目標：將防詐行為從單次事件，轉化為可被累積與分享的長期守望關係。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="zone m-0 row w-100 future-plan" data-aos="fade-up">
+            <div class="section-title col-12 col-xxl-3 col-lg-3 col-md-3 mb-4">
+                <div class="section-title-text">學習與反思</div>
+                <hr class="title-text-decorative-line">
+            </div>
+            <div class="section-info col-12 col-md-12 col-lg-9 col-xxl-9 gap-5">
+                <div class="d-flex flex-column gap-3">
+                    這次為期一個半月的產品挑戰賽，讓我完完整整經歷了一次從 0 到 1 的設計過程。
+                    <br>相較以往工作經驗多半直接從介面設計開始，本次專案在前期投入了大量研究，協助團隊釐清問題情境與使用者需求，也讓後續的設計決策有明確的推論依據。
+                    <br><br>在實際設計過程中，相較以往專案，這次更明確地將系統限制與資源條件納入設計決策核心，思考如何在現實條件下提出「非完美但可落地」的體驗解法。
+                    <br>許多設計取捨並非選擇理想解法，而是判斷哪一種方案能在關鍵情境中有效被使用，並能與既有系統共存。
+                    <br><br>此外，本次專案嘗試將原本較為抽象的情感需求（如安心、被守護感）轉化為可被觸發的互動節點，例如在來電當下與來電後的關鍵時刻，透過明確的介面提示與行為引導，降低使用者的心理負擔，而非僅停留在概念層的描述。
+                    <br><br>在團隊合作中，我主要負責介面設計、Prototype 製作，並參與訪談訪綱的規劃。
+                    <br>同時，我也負責易用性測試的執行與回饋收集，協助將研究洞察與測試結果轉化為實際可落地的使用流程與介面設計。
+                    <br>在多數設計決策上，我們透過團隊討論共同收斂方向，而我則著重於確保整體流程一致性與實際使用情境下的可用性。
+                    <br>這次經驗讓我更加確信，好的設計不只是完成介面，而是建立一條能被理解、被驗證，且能在現實條件下成立的設計推論路徑。
+                </div>
+            </div>
+        </div> 
         <!-- 置頂按鈕 -->
         <div class="top-btnpage"></div>
     </div>
