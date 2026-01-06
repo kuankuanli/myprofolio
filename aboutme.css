@@ -174,7 +174,7 @@
 .skill-info {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
     font-size: 18px;
 }
 .fa-regular {
@@ -200,6 +200,35 @@
 .experience-dot-sm {
     display: none;
 }
+.skill-item > div:first-child {
+    width: fit-content;
+    padding: 2px 12px;
+    color: #4a4a4a;
+    border-radius: 100px;
+    margin-bottom: 4px;
+}
+.skill-design .skill-item > div:first-child  {
+    background: #ECE2DA;
+}
+.skill-ux .skill-item > div:first-child  {
+    background: #DDE9DA;
+}
+.skill-frontend .skill-item > div:first-child  {
+    background: #DBE7EF;
+}
+.fa-arrow-right {
+    font-size: 14px;
+    margin: 0 8px;
+}
+.skill-design .fa-arrow-right  {
+    color: #CFB489
+}
+.skill-ux .fa-arrow-right  {
+    color: #99A496
+}
+.skill-frontend .fa-arrow-right  {
+    color: #82A4C1
+}
 /* 我的筆電螢幕 */
 @media screen and (max-width:1518px) {
     #zone-3 {
@@ -214,7 +243,7 @@
         margin-top: 40px;
     }
     .skill-info {
-        gap: 8px;
+        gap: 20px;
     }
 }
 /* 筆電尺寸 */
@@ -266,19 +295,19 @@
 @media screen and (max-width:1024px) {
     .skill-info {
         margin-left: 40px;
-        gap: 4px;
+        gap: 16px;
         width: -webkit-fill-available;
     }
     .skill-title {
         font-weight: 800;
         width: 100%;
     }
-    .skill-info div::before {
+    /* .skill-info div::before {
         content: "•";
         color: #666;
         font-size: 1.2rem;
         margin-right: 0.6rem;
-    }
+    } */
     .zone {
         padding: 0 8%;
     }
@@ -377,7 +406,7 @@
     .skill-info {
         flex-wrap: wrap;
         font-size: 16px;
-        margin-left: 32px;
+        margin-left: 36px;
     }
     .job-title, .in-service {
         font-size: 16px;
@@ -401,7 +430,7 @@
 }
 @media screen and (max-width: 500px){
     .container {
-        padding-top: 64px;
+        padding-top: 5rem;
     }
     #logo {
         width: 32%;
@@ -504,6 +533,11 @@
     }
     .job::before {
         left: 191px;
+    }
+}
+@media screen and (max-width: 834px) and (max-height: 1194px) {
+    .fa-arrow-right {
+        display: inline-block;
     }
 }
 @media screen and (max-width: 414px) and (max-height: 736px) {

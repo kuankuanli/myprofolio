@@ -234,7 +234,7 @@
 /* 針對所有直式螢幕 */
 @media screen and (orientation: portrait) and (max-height: 1366px) {
     #zone-1 {
-        height: 30vh;
+        height: 32vh;
     }
 }
 @media screen and (max-width:1024px) {
@@ -335,8 +335,14 @@
     .project>a {
         height: 16rem;
     }
+    .project-tag {
+        margin-top: 2px;
+    }
 }
 @media screen and (max-width: 500px){
+    #zone-1 {
+        background-image: url(wwwroot/img/index_bg-sm-v.png);
+    }
     #logo {
         width: 32%;
     }
@@ -367,6 +373,7 @@
     }
     #zone-1 {
         height: 70vh;
+        background-image: url(wwwroot/img/index_bg-sm-h.png);
     }
     #home-title {
         font-size: 32px;
@@ -378,10 +385,15 @@
     .home-title::after {
         top: 24px;
     }
+    .name {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
 }
 @media screen and (max-width: 414px) {
     #zone-1 {
-        height: 35vh;
+        height: 42vh;
     }
 }
 @media screen and (max-width: 736px) and (max-height: 414px) {
