@@ -39,6 +39,11 @@
         align-content: center;
     }
 }
+@media screen and (max-width: 939px) and (min-height: 939px) {
+    .user-story::before {
+        height: 378px;
+    }
+}
 /* 所有橫式螢幕 */
 @media screen and (orientation: landscape) and (max-width: 1024px){
     .planning-flow > div:last-child {
@@ -46,9 +51,28 @@
         align-content: center;
     }
 }
-
+@media screen and (max-width: 500px) {
+    .user-story::before {
+        height: 408px;
+    }
+}
 @media screen and (max-height: 500px) {
     .brush-icon {
         right: 10px;
+    }
+}
+@media screen and (max-width: 390px) and (min-height: 844px) {
+    .user-story::before {
+        height: 449px;
+    }
+}
+@media screen and (max-width: 375px) and (min-height: 812px) {
+    .user-story::before {
+        height: 473px;
+    }
+}
+@media screen and (max-width: 375px) and (min-height: 667px) {
+    .user-story::before {
+        height: 468px;
     }
 }

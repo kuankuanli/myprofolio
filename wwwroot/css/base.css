@@ -37,8 +37,8 @@ hr {
     box-shadow: 0 2px 5px rgb(178, 178, 178, 10%);
     transition: background-color 0.3s ease;
 }
-#navbar.scrolled {
-  background-color: rgb(255 255 255);
+#navbar.scrolled, .navbar.menu-open {
+    background-color: rgb(255 255 255);
 }
 .nav-link {
     background-color: transparent;
@@ -560,12 +560,6 @@ h1, h2 {
 .section-img-sm {
     display: none;
 }
-.img-thumbnail {
-    padding: 0;
-    cursor: pointer;
-    border: none;
-    border-radius: 0;
-}
 .user-story {
     display: flex;
     flex-direction: column;
@@ -827,6 +821,7 @@ h1, h2 {
     display: block;
     width: 80%;
     max-width: 700px;
+    max-height: calc(100vh - 44px);
 }
 
 /* Caption of Modal Image */
@@ -874,6 +869,9 @@ h1, h2 {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+body.modal-open {
+  overflow: hidden;
 }
 
 /*針對縱向 css去撰寫*/
@@ -1116,7 +1114,7 @@ h1, h2 {
 }
 
 @media screen and (max-width: 991px) {
-     .nav-right-tool.is-open .download-resume_sm {
+     .nav-right-tool.menu-open .download-resume_sm {
         display: block;
     }
     .download-resume {
@@ -1167,6 +1165,11 @@ h1, h2 {
     }
     .user-story::before {
         height: 360px;
+    }
+}
+@media screen and (max-width: 843px) {
+    .planning-flow svg {
+        display: none;
     }
 }
 @media screen and (max-width: 834px) and (max-height: 1194px) {
@@ -1296,12 +1299,12 @@ h1, h2 {
         height: 360px;
     }
 
-    .nav-right-tool.is-open {
+    .nav-right-tool.menu-open {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    .nav-right-tool.is-open .download-resume_sm {
+    .nav-right-tool.menu-open .download-resume_sm {
         order: 2;
         width: 100%;
         text-align: center;
@@ -1309,7 +1312,7 @@ h1, h2 {
     .navbar-toggler {
         width: 4rem;
     }
-    .nav-right-tool.is-open {
+    .nav-right-tool.menu-open {
         align-items: flex-end;
     }
     #navbarNavDropdown {
@@ -1392,7 +1395,7 @@ h1, h2 {
         width: 100%;
     }
     .zone-demo img {
-        height: 20rem;
+        height: 17rem;
     }
     .item-name {
         padding: 4.5rem 1.5rem 1.5rem 1.5rem;
@@ -1403,9 +1406,6 @@ h1, h2 {
     }
     .color-info {
         padding: 4px 12px;
-    }
-    .user-story::before {
-        height: 390px;
     }
     .color-group {
         justify-content: center;
@@ -1425,12 +1425,12 @@ h1, h2 {
         gap: 1.2rem;
         align-items: flex-end;
     }
-    .nav-right-tool.is-open {
+    .nav-right-tool.menu-open {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    .nav-right-tool.is-open .download-resume_sm {
+    .nav-right-tool.menu-open .download-resume_sm {
         order: 2;
         width: 100%;
         text-align: center;
@@ -1438,7 +1438,7 @@ h1, h2 {
     .navbar-toggler {
         width: 4rem;
     }
-    .nav-right-tool.is-open {
+    .nav-right-tool.menu-open {
         align-items: flex-end;
     }
     #navbarNavDropdown {
@@ -1596,6 +1596,9 @@ h1, h2 {
     #zone-img-3 img:nth-child(2), #zone-img-3 img:nth-child(3) {
         margin-top: -64px;
     }
+    .zone-demo img {
+        height: 29rem;
+    }
 }
 @media screen and (max-width: 736px) and (max-height: 414px){
    
@@ -1628,9 +1631,6 @@ h1, h2 {
         padding: 8px 4px;
     }
 }
-@media screen and (max-width: 375px) and (max-height: 667px) {
-    
-}
 @media screen and (max-height: 500px){
     .color-content {
         grid-template-columns: unset;
@@ -1638,5 +1638,37 @@ h1, h2 {
     }
     #zone-img-2, #zone-img-3 {
         grid-auto-flow: row;
+    }
+}
+@media screen and (max-width: 375px) {
+    .flow-arrow-left {
+        right: 8px;
+    }
+    .flow-arrow-right {
+        left: 8px;
+    }
+}
+@media screen and (max-width: 812px) and (max-height: 375px) {
+    .flow-arrow-left {
+        right: 220px;
+    }
+    .flow-arrow-right {
+        left: 216px;
+    }
+}
+@media screen and (max-width: 736px) and (max-height: 414px) {
+    .flow-arrow-left {
+        right: 186px;
+    }
+    .flow-arrow-right {
+        left: 184px;
+    }
+}
+@media screen and (max-width: 667px) and (max-height: 375px) {
+    .flow-arrow-left {
+        right: 163px;
+    }
+    .flow-arrow-right {
+        left: 157px;
     }
 }
