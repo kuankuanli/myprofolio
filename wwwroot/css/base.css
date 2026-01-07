@@ -93,6 +93,9 @@ footer {
     font-weight: bold;
     grid-column: auto / span 2;
 }
+a {
+    text-decoration: none;
+}
 nav > div > a {
     padding-left: 0;
     padding-right: 0;
@@ -124,6 +127,7 @@ nav > div > a {
 .project-tag {
     color: #949494;
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     justify-content: end;
 }
@@ -674,6 +678,13 @@ h1, h2 {
     object-fit: cover;
     margin-bottom: 3rem;
 }
+.project-main-img-sm {
+    display: none;
+    width: 100%;
+    height: 44rem;
+    object-fit: cover;
+    margin-bottom: 3rem;
+}
 .detail-title {
     font-weight: 500;
     font-size: 18px;
@@ -697,6 +708,9 @@ h1, h2 {
 .identity {
     font-size: 1.9rem;
     font-weight: 500;
+}
+.identity-sm {
+    display: none;
 }
 .persona-role {
     display: flex;
@@ -749,6 +763,10 @@ h1, h2 {
     gap: 4px;
     margin-top: 16px;
 }
+.role-solution div {
+    display: flex;
+    align-items: center;
+}
 .role-solution svg {
     margin-right: 4px;
 }
@@ -775,6 +793,89 @@ h1, h2 {
     flex-direction: column;
     gap: 8px;
 }
+.zoom-img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.zoom-img:hover {opacity: 0.7;}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.img-modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #e4e4e4;
+    padding: 10px 0;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    color: #f1f1f1;
+    font-size: 32px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /*針對縱向 css去撰寫*/
 @media (orientation: portrait) {
     .landscape-alert {
@@ -1362,6 +1463,11 @@ h1, h2 {
         max-height: unset;
     }
 }
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 630px) {
     .container {
         min-width: unset;
@@ -1439,6 +1545,22 @@ h1, h2 {
     }
     .name div:nth-child(2) {
         color: #46403d;
+    }
+    .peosona-basic {
+        display: flex;
+        gap: 1rem;
+    }
+    .identity {
+        display: none;
+    }
+    .identity-sm {
+        display: block;
+    }
+    .persona-role {
+        padding: 0;
+    }
+    .persona .section-info > div {
+        align-items: center;
     }
 }
 @media screen and (max-height: 500px) {
