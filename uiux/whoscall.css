@@ -152,6 +152,10 @@ img {
     display: flex;
     gap: 4rem;
 }
+.weekly-gif {
+    width: 32rem;
+    border-radius: 10px;
+}
 /* 所有小螢幕 */
 @media screen and (max-width: 1366px) {
     .persona-role-protector {
