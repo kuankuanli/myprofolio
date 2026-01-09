@@ -30,6 +30,14 @@ hr {
 }
 .container-fluid {
     padding: 0 4vw;
+    position: relative;
+}
+.navbar-brand {
+    position: absolute;
+}
+.nav-right-tool {
+    width: 100%;
+    padding-left: 96px;
 }
 .navbar {
     background-color: rgb(255 255 255);
@@ -1109,9 +1117,6 @@ body.modal-open {
 }
 
 @media screen and (max-width: 991px) {
-     .nav-right-tool.menu-open .download-resume_sm {
-        display: block;
-    }
     .download-resume {
         display: none;
     }

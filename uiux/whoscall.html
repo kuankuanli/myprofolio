@@ -787,8 +787,13 @@
     <script src="../wwwroot/js/base.js"></script>
     <script>
         $(".top-btnpage").load("../top-btn.html"); 
-        $(".headerpage").load("../header.html"); 
+        $(".headerpage").load("../header.html", function () {
+            // header DOM 已插入完成
+            initHeader();
+        });
+            $(".footerpage").load("footer.html");
         $(".footerpage").load("../footer.html");
     </script>
+    <script src="../wwwroot/js/header.js"></script>
 </body>
 </html>
