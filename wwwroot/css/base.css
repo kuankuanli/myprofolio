@@ -1451,6 +1451,14 @@ body.modal-open {
     .navbar>.container-fluid {
         align-items: flex-start;
     }
+    .top-btn {
+        right: 12px;
+        bottom: 12px;
+    }
+    .top-icon {
+        width: 64px;
+        height: 64px;
+    }
 }
 @media screen and (max-width: 767px){
     .container {
