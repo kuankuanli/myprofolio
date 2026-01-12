@@ -498,6 +498,9 @@
     .experience-info, .experience-title {
         margin-left: 40px;
     }
+        .skill-info {
+        margin: 0;
+    }
 }
 @media screen and (max-height: 500px){
     .zone {

@@ -2,6 +2,9 @@
     width: 100%;
     border-radius: 10px;
 }
+.project-name {
+    color: #9e8574;
+}
 @media screen and (max-width:1080px) and (max-height:810px){
     
 }

@@ -18,6 +18,9 @@
 .fa-lock {
     color: #B3B3B3;
 }
+.project-name {
+    color: #359D99;
+}
 /* 所有小螢幕 */
 @media screen and (max-width: 1366px) {
     .color-group::before {

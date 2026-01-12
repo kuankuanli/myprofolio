@@ -108,9 +108,7 @@ img {
     font-weight: 500;
 }
 .three-level-img {
-    width: 32rem;
-    margin: 1rem;
-    padding-left: 1.5rem
+    width: 44rem;
 }
 .note-card {
     background: #E8E8E8;
@@ -155,6 +153,14 @@ img {
 .weekly-gif {
     width: 32rem;
     border-radius: 10px;
+}
+.ui-flow-1 {
+    width: 62rem;
+    max-width: 100%;
+}
+.ui-flow-2 {
+    width: 54rem;
+    max-width: 100%;
 }
 /* 所有小螢幕 */
 @media screen and (max-width: 1366px) {

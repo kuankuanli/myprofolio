@@ -16,6 +16,9 @@
 .pattern-img img {
     width: 5rem;
 }
+.project-name {
+    color: #dd866b;
+}
 /* 所有小螢幕 */
 @media screen and (max-height: 500px) {
     .flow-img {
