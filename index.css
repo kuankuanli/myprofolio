@@ -113,10 +113,6 @@
 #zone-graphic .project img:hover {
     box-shadow: unset;
 }
-.project-self {
-    grid-column: auto / span 2;
-    width: calc(50% - 24px);
-}
 .project-content {
     display: grid;
     margin-top: 8px;
@@ -355,10 +351,6 @@
     #home-title::after {
         height: 17px;
         top: 17px;
-    }
-    .project-self {
-        grid-column: unset;
-        width: unset;
     }
     .home-title {
         grid-column: unset;
